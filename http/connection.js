@@ -1,8 +1,8 @@
 var mysql = require('mysql');
 var Sequelize = require('sequelize');
 
-var sequelize = new Sequelize('heroku_f8ac50143f5bc34', 'b839c7849dc0ca', '0bbdf7fe', {
-    host: 'us-cdbr-iron-east-03.cleardb.net',
+var sequelize = new Sequelize('heroku_2cf134b81f08a6b', 'b3a9fee3c94f1f', '265cfdb3', {
+    host: 'us-cdbr-iron-east-05.cleardb.net',
     dialect: 'mysql',
     port: '3306',
     pool: {
@@ -23,3 +23,5 @@ sequelize.sync()
 
 module.exports.Sequelize = Sequelize;
 module.exports.sequelize = sequelize;
+
+//Datos mysql heroku : squema : heroku_2cf134b81f08a6b /usuario: b3a9fee3c94f1f /contraseña: 265cfdb3 /host: us-cdbr-iron-east-05.cleardb.net
